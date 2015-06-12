@@ -27,8 +27,8 @@
       return "Image " + curImageNum + " of " + albumSize;
     };
     //Hardy 2015-5-28
-    LightboxOptions.prototype.albumWorkLabel = function(idx,name,media,name_e,media_e) {
-      return '<table border="0" cellspacing="0" cellpadding="0" style="position:relative;left:20px"><tr><td width="100"><p class="chi">作品' + idx + '</p></td><td width="100"><p class="chi">(名稱)</p></td><td width="80"><p class="chi">' + name + '</p></td><td width="100"><p class="chi">(媒介)</p></td><td width="300"><p class="chi">' + media + '</p></td></tr><tr><td><p class="eng">Artwork ' + idx + '</p></td><td><p class="eng">(Title)</p></td><td><p class="eng">' + name_e + '</p></td><td><p class="eng">(Medium)</p></td><td><p class="eng">' + media_e + '</p></td></tr></table>';
+    LightboxOptions.prototype.albumWorkLabel = function(idx,student,work,student_e,work_e) {
+      return '<table border="0" cellspacing="0" cellpadding="0" style="position:relative;left:20px;color:#000"><tr><td width="150"><p class="chi">' + student + '</p></td><td width="200"><p class="chi">' + work + '</p></td></tr><tr><td><p class="eng">' + student_e + '</p></td><td><p class="eng">' + work_e + '</p></td></tr></table>';
     };
     LightboxOptions.prototype.albumWorkbookLabel = function(curImageNum, albumSize) {
       return '<p class="eng" style="position:relative;left:20px">頁 Page ' + curImageNum + '/' + albumSize + '</p>';
@@ -148,6 +148,10 @@
           // Hardy 2015-5-28
           data: $link.attr('data-lightbox') || null,
           idx: $link.attr('idx') || null,
+          student: $link.attr('student') || null,
+          work: $link.attr('work') || null,
+          student_e: $link.attr('student-e') || null,
+          work_e: $link.attr('work-e') || null,
           name: $link.attr('name') || null,
           media: $link.attr('media') || null,
           name_e: $link.attr('name-e') || '',
@@ -353,21 +357,23 @@
           });
       }
     
-      if (this.album.length > 1 && this.options.showImageNumberLabel) {
+      //Hardy 2015-6-12
+      if('student-workbook'==this.album[this.currentImageIndex].data){
+        this.$lightbox.find('.lb-number').html(this.options.albumWorkbookLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast');
+      }
+      else if(this.album[this.currentImageIndex].idx === null){
+        this.$lightbox.find('.lb-number').text(this.options.albumLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast');
+      }
+      else{
+        //Hardy 2015-6-12
+        this.$lightbox.find('.lb-number').html(this.options.albumWorkLabel(this.album[this.currentImageIndex].idx,this.album[this.currentImageIndex].student,this.album[this.currentImageIndex].work,this.album[this.currentImageIndex].student_e,this.album[this.currentImageIndex].work_e)).fadeIn('fast');
+      }
+      /*if (this.album.length > 1 && this.options.showImageNumberLabel) {
         //Hardy 2015-5-28
         //this.$lightbox.find('.lb-number').text(this.options.albumLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast');
-        if('student-workbook'==this.album[this.currentImageIndex].data){
-          this.$lightbox.find('.lb-number').html(this.options.albumWorkbookLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast');
-        }
-        else if(this.album[this.currentImageIndex].idx === null){
-          this.$lightbox.find('.lb-number').text(this.options.albumLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast');
-        }
-        else{
-          this.$lightbox.find('.lb-number').html(this.options.albumWorkLabel(this.album[this.currentImageIndex].idx,this.album[this.currentImageIndex].name,this.album[this.currentImageIndex].media,this.album[this.currentImageIndex].name_e,this.album[this.currentImageIndex].media_e)).fadeIn('fast');
-        }
       } else {
         this.$lightbox.find('.lb-number').hide();
-      }
+      }*/
     
       this.$outerContainer.removeClass('animating');
     
