@@ -56,12 +56,13 @@ h3.eng {
 ul {
   list-style: outside none none;
   padding: 0;
+  margin: 0;
 }
 
 /* background */
 .background-div {
   position: absolute;
-  left: -250px;
+  left: -240px;
   top: -65px;
   z-index: -10;
   width: 100%;
@@ -180,10 +181,25 @@ ul {
 }
 
 .worklist-u {
-  padding: 0 20px 20px 20px;
+  padding: 0 0 20px 20px;
 }
+
 .worklist-u li {
+  width: 180px;
+  height: 180px;
   float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.worklist-u .img-frame {
+  width: 180px;        /* 如果加了border要減掉border的寬度 */
+  height: 180px;       /* 同上 */
+  background-color:#eee;
+}
+.worklist-u .img-frame div {
+  width: 160px;
+  height: 160px;
+  padding: 10px;
 }
 
 /* sidelights */
