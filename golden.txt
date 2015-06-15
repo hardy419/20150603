@@ -1,0 +1,20 @@
+﻿S009	新界鄕議局元朗區中學	N.T. Heung Yee Kuk Yuen Long District Secondary School	張欣羚	CHEUNG Yan-ling	17	黑暗的進化	Dark evolution	鄭雲虹	CHENG Wan-hung, Wilson  
+S010	旅港開平商會中學	Hoi Ping Chamber of Commerce Secondary School	黃靖雯	WONG Ching-man	19	回歸日~ 從1997到2017	HKSAR Establishment Day, from1997 to 2017	朱巧英	CHU Hau-ying
+S045	東華三院辛亥年總理中學	TWGHs Sun Hoi Directors’ College	何嘉慧	HO Ka-wai	17	力•繫	Force and Connections	徐淑珍	TSUI Shuk-chun
+S052	循道中學	Methodist College	王祖杰	WONG Cho-kit	17	我城	Our Town	傅競揚	FU King-yeung
+S057	聖公會林裘謀中學	SKH Lam Kau Mow Secondary School	葉皓誼	YIP Ho-yi	16	惜時	Treasure Time	郭筱怡	KWOK Siu-yee
+S059	保良局姚連生中學	Po Leung Kuk Yao Ling Sun College	黃敏儀	WONG Man-yee	16	中秋	Mid-Night	呂雪儀	LUI Suet-yi
+S059	保良局姚連生中學	Po Leung Kuk Yao Ling Sun College	葉嘉盈	IP Ka-ying	16	Z世代	Generation Z	呂雪儀	LUI Suet-yi
+S069	聖保祿學校	St. Paul's Convent School (Secondary Section)	康芯瑜	HONG Sum-yu	17	《人·鴉》	The Crows	吳珈蔚	Gloria NG
+S072	香港浸會大學附屬學校王錦輝中小學	HKBU Affiliated School Wong Kam Fai Secondary & Primary School	陳子謙	CHAN Tsz-him	17	心•刻	Engraving with heart	羅醒楷	LAW Sing-kai
+S072	香港浸會大學附屬學校王錦輝中小學	HKBU Affiliated School Wong Kam Fai Secondary & Primary School	陳子謙	CHAN Tsz-him	17	香港頭條	Hong Kong Headline	羅醒楷	LAW Sing-kai
+S072	香港浸會大學附屬學校王錦輝中小學	HKBU Affiliated School Wong Kam Fai Secondary & Primary School	曾浩霖	TSANG Haolin Wesley	17	黑色一面	The Dark Side	羅醒楷	LAW Sing-kai
+S074	金文泰中學	Clementi Secondary School	梁曉昕	LEUNG Hiu-yan	17	歲日樓情	Old Hong Kong	鄧笑琴	TANG Siu-kam, Alix
+S087	中華聖潔會靈風中學	China Holiness Church Living Spirit College	徐子璇	CHUI Tsz-shuen	17	追尋	Pursue	余耀祖	YU Yiu-cho
+S097	寶安商會王少清中學	Po On Commercial Association Wong Siu Ching Secondary School	曾希彤	TSANG Hei-tung	14	立體山水	3D Landscape	鄺啟德	KWONG Kai-tak
+S104	林大輝中學	Lam Tai Fai College	胡樂怡	WOO Lok-yi	16	摺	Fold	王小帆	Camille WANG
+S105	五育中學	Ng Yuk Secondary School	黃美華	WONG Mei-wah	20	誕	Birth	張玉菁	CHEUNG Yuk-ching
+S110	聖公會莫壽增會督中學	SKH Bishop Mok Sau Tseng Secondary School	余愷澄	YU Hoi-ching	17	澄現四季	Ching’s Views of Nature	洪佩君	HUNG Pui-kwan
+S125	何明華會督銀禧中學	Bishop Hall Jubilee School	周立進	CHOW Lap-chun	17	又是老樣子的一天	Another Ordinary Day	楊婉玉	YANG Yuen-yuk
+S137	長沙灣天主教英文中學	Cheung Sha Wan Catholic Secondary School	楊嘉俊	YEUNG Ka-chun	17	香港末日	Doomsday of Hong Kong	吳綺萍	NG Yee-ping Karen
+S142	筲箕灣官立中學	Shau Kei Wan Government Secondary School	張家愉	ZHANG Jia-yu	17	淘汰?	Eliminated?	鄭煥華、 	Ms CHENG Woon-wah	林旭艷	Miss LAM Yuk-yim 

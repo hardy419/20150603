@@ -85,6 +85,10 @@ ul {
   margin: 0;
 }
 
+td {
+  vertical-align: top;
+}
+
 /* background */
 .background-div {
   position: absolute;
