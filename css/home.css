@@ -94,6 +94,14 @@ ul {
   width: 100%;
 }
 
+/* back button */
+.back-div {
+  position: relative;
+  left: 880px;
+  top: 300px;
+  z-index: 100;
+}
+
 /* container */
 .container {
   width:1000px;

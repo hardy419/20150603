@@ -28,7 +28,7 @@
     };
     //Hardy 2015-5-28
     LightboxOptions.prototype.albumWorkLabel = function(idx,student,work,student_e,work_e) {
-      return '<table border="0" cellspacing="0" cellpadding="0" style="position:relative;left:20px;color:#000"><tr><td width="150"><p class="chi">' + student + '</p></td><td width="200"><p class="chi">' + work + '</p></td></tr><tr><td><p class="eng">' + student_e + '</p></td><td><p class="eng">' + work_e + '</p></td></tr></table>';
+      return '<table border="0" cellspacing="0" cellpadding="0" style="position:relative;left:16px;color:#000"><tr><td width="200"><p class="chi">' + student + '</p></td><td width="200"><p class="chi">' + work + '</p></td></tr><tr><td><p class="eng">' + student_e + '</p></td><td><p class="eng">' + work_e + '</p></td></tr></table>';
     };
     LightboxOptions.prototype.albumWorkbookLabel = function(curImageNum, albumSize) {
       return '<p class="eng" style="position:relative;left:20px">頁 Page ' + curImageNum + '/' + albumSize + '</p>';
