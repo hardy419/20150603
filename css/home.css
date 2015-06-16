@@ -292,6 +292,14 @@ td {
   padding: 0px;
 }
 
+.workinfo h1, h4 {
+  line-height: 1.4;
+}
+
+.workinfo .right-div ul {
+  margin-top: 10px;
+}
+
 /* sidelights */
 .sidelights {
   width: 780px;
