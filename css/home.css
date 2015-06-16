@@ -300,6 +300,36 @@ td {
   margin-top: 10px;
 }
 
+/* certificate */
+.certificate {
+  width: 760px;
+  padding: 20px;
+}
+.certificate>div:first-child {
+  width: 300px;
+  float: left;
+}
+.certificate>div:first-child+div {
+  width: 460px;
+  float: left;
+}
+.category-div {
+  margin-top: 15px;
+}
+.category-div li:first-child~li {
+  margin-left: 20px;
+}
+.category-div .img-li li {
+  float: left;
+}
+.category-div a img {
+  width: 175px;
+  height: 175px;
+}
+.category-div .info-div {
+  margin-top: 5px;
+}
+
 /* sidelights */
 .sidelights {
   width: 780px;
