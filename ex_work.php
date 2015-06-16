@@ -1,13 +1,13 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
 
-$src = 'golden.txt';
+$src = 'silver.txt';
 
 $fh = fopen($src, 'r');
 
-$templ = file_get_contents('artwork_gXX.html');
+$templ = file_get_contents('artwork_sXX.html');
 
-$index = 2;
+$index = 1;
 
 while ($line = fgets ($fh)) {
     $data = explode ("\t", $line);
@@ -26,6 +26,8 @@ while ($line = fgets ($fh)) {
     array_push($str2, $data[6], $data[7]);
     array_push($str1, '##age##');
     array_push($str2, $data[5]);
+    array_push($str1, '##id##', '##index##');
+    array_push($str2, $data[0], sprintf("%'02d", $index));
     array_push($str1, '##teacher##');
     array_push($str2, '<p class="chi">'.$data[8].'</p><p class="eng">'.$data[9].'</p><p class="chi">&nbsp;</p>##teacher##');
     $new_filecontents = str_replace($str1,$str2,$new_filecontents);
@@ -36,9 +38,9 @@ while ($line = fgets ($fh)) {
     }
     $new_filecontents = str_replace('##teacher##','',$new_filecontents);
 
-    file_put_contents('artwork_g'.sprintf("%'02d", $index).'.html', $new_filecontents);
+    file_put_contents('artwork_s'.sprintf("%'02d", $index).'.html', $new_filecontents);
 
-    echo '<h3>File: artwork_g'.sprintf("%'02d", $index).'.html generated!</h3>';
+    echo '<h3>File: artwork_s'.sprintf("%'02d", $index).'.html generated!</h3>';
 
     $index++;
 }
