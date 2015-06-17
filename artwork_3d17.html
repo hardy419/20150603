@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SSSE</title>
 <link media="screen" type="text/css" rel="stylesheet" href="css/home.css"></link>
+<link media="screen" type="text/css" rel="stylesheet" href="css/lightbox.css"></link>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/lightbox.js"></script>
 </head>
 <body>
   <div class="background-div"><img src="Img/background.png" /></div>
   <div class="container">
     <div class="header">
-      <div class="back-div"><a href="certificate.html"><img src="Img/back.jpg" /></a></div>
+      <div class="back-div"><a href="3d_artwork.html"><img src="Img/back.jpg" /></a></div>
     </div>
     <div class="menu-left">
       <div class="menu-item" id="menu-id1" onclick="window.location.href='index.html';" onmouseover="$(this).css('background-color','#eee')" onmouseout="$(this).css('background-color','transparent')">
@@ -32,21 +34,37 @@
       </div>
     </div>
     <div class="contents">
-      <div class="worklist">
-        <div class="chinese-div">
-          <h2 class="chi">中國書畫</h2>
+      <div class="workinfo">
+        <div class="left-div">
+          <h1 class="chi">潘嘉麗</h1>
+          <h1 class="eng">Eliza POON</h1>
+          <p class="chi">&nbsp;</p>
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="120"><p class="chi">年齡/Age</p><p class="chi">&nbsp;</p></td>
+              <td><p class="eng">18</p><p class="chi">&nbsp;</p></td>
+            </tr>
+            <tr>
+              <td><p class="chi">參展學校</p><p class="eng">School</p><p class="chi">&nbsp;</p></td>
+              <td><p class="chi">中華基督教會基朗中學</p><p class="eng">CCC Kei Long College</p><p class="chi">&nbsp;</p></td>
+            </tr>
+            <tr>
+              <td><p class="chi">作品主題</p><p class="eng">Topic</p><p class="chi">&nbsp;</p></td>
+              <td><p class="chi">森•林•木</p><p class="eng">Vanishing forest</p><p class="chi">&nbsp;</p></td>
+            </tr>
+            <tr>
+              <td><p class="chi">指導老師</p><p class="eng">Teacher</p><p class="chi">&nbsp;</p></td>
+              <td><p class="chi">曾婉眉</p><p class="eng">TSANG Yuen-mei</p><p class="chi">&nbsp;</p></td>
+            </tr>
+          </table>
         </div>
-        <div class="english-div">
-          <h2 class="eng">Chinese Painting &amp; Calligraphy</h2>
+        <div class="right-div">
+          <h4 class="chi">作品</h4>
+          <h4 class="eng">Artwork</h4>
+          <ul class="student-work-u">
+            <li lsrc="Img/Artwork_3.Merit/3D/S113-13.gif"><a href="Img/Artwork_3.Merit/3D/S113-13.gif" data-lightbox="student-work" idx="1" student="潘嘉麗" work="森•林•木" student-e="Eliza POON" work-e="Vanishing forest"><div class="img-frame"><div></div></div></a></li>
+          </ul>
         </div>
-        <div style="clear:both"></div>
-
-      <div class="jspContainer" style="width:800px;height:490px"><div id="jscrollpane-div">
-        <ul class="worklist-u">
-##list_unit##
-        </ul>
-      </div></div>
-
         <div style="clear:both"></div>
       </div>
     </div>
@@ -56,9 +74,6 @@
       <p class="footer-chi">2015 &copy; 本網頁版權屬香港特別行政區教育局所有。</p>
     </div>
   </div>
-<link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all" />
-<script src="js/jquery.mousewheel.js"></script>
-<script src="js/jquery.jscrollpane.min.js"></script>
 <script>
 $(document).ready(function (){
   $("li").each(function(){
@@ -66,12 +81,7 @@ $(document).ready(function (){
     var rw=parseInt(obj_li.css("width"));
     var rh=parseInt(obj_li.css("height"));
     var img=new Image();
-    if(typeof $(this).attr("lsrc") === 'undefined'){
-      return;
-    }
-    else {
-      img.src=$(this).attr("lsrc");
-    }
+    img.src=$(this).attr("lsrc");
     img.onload=function(){
       var l,t;
       var w=img.width;
@@ -89,8 +99,6 @@ $(document).ready(function (){
       obj_li.html("<img src=\"" + img.src + "\" style=\"width:" + w + "px;height:" + h + "px; position:relative;left:" + l + "px;top:" + t + "px\"/>");
     };
   });
-  
-  $('.jspContainer').jScrollPane();
 });
 </script>
 </body>

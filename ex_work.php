@@ -15,7 +15,7 @@ fclose($fh);
 
 $templ = file_get_contents('artwork_sXX.html');
 
-$img_files = scandir('./Img/Artwork_3.Merit/2D/');
+$img_files = scandir('./Img/Artwork_3.Merit/MEDIA/');
 
 $index = 1;
 
@@ -65,9 +65,9 @@ foreach ($img_files as $img_file) if('S' == $img_file[0] && !strpos($img_file, '
     }
     $new_filecontents = str_replace('##teacher##','',$new_filecontents);
 
-    file_put_contents('artwork_2d'.sprintf("%'02d", $index).'.html', $new_filecontents);
+    file_put_contents('artwork_m'.sprintf("%'02d", $index).'.html', $new_filecontents);
 
-    echo '<h3>File: artwork_2d'.sprintf("%'02d", $index).'.html generated!</h3>';
+    echo '<h3>File: artwork_m'.sprintf("%'02d", $index).'.html generated!</h3>';
 
     $index++;
 }

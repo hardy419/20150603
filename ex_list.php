@@ -15,12 +15,12 @@ fclose($fh);
 
 print_r ($data);
 
-$file = '2d_artwork.html';
+$file = 'chinese_painting.html';
 
 $list_unit = file_get_contents('list_unit.txt');
 $list_templ = file_get_contents('list_templ.txt');
 
-$img_files = scandir('./Img/Artwork_3.Merit/2D/');
+$img_files = scandir('./Img/Artwork_3.Merit/ÖÐ‡ø•ø®‹/');
 
 $index = 1;
 
