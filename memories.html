@@ -2,95 +2,75 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SSSE</title>
 <link media="screen" type="text/css" rel="stylesheet" href="css/home.css"></link>
 <link media="screen" type="text/css" rel="stylesheet" href="css/lightbox.css"></link>
 <script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/lightbox.min.js"></script>
 </head>
 <body>
+  <div class="background-div"><img src="Img/background.png" /></div>
   <div class="container">
     <div class="header">
-      <div class="header-pics">
-        <div><img src="img/paint-board.png" /></div>
-        <div><img src="img/paint-brush-glue.png" /></div>
-        <div><img src="img/paint-big.png" /></div>
-        <div><img src="img/title-e.png" /></div>
-        <div><img src="img/pencil.png" /></div>
-        <div><img src="img/chulk.png" /></div>
-        <div><img src="img/sharpener-glue-rubber.png" /></div>
-      </div>
-      <img src="img/title.png" />
+      <div class="back-div"><a href="index.html"><img src="Img/back.jpg" /></a></div>
     </div>
     <div class="menu-left">
-      <div class="menu-item-red height-50" id="menu-id1" onclick="window.location.href='index.html';">
-        <p class="chi">展覽簡介</p><p class="eng">Exhibition introduction</p>
+      <div class="menu-item" id="menu-id1" onclick="window.location.href='index.html';" onmouseover="$(this).css('background-color','#eee')" onmouseout="$(this).css('background-color','transparent')">
+        <p class="chi">展覽簡介</p><p class="eng">Introducion</p>
       </div>
-      <div class="menu-item-green height-50" id="menu-id2" onclick="window.location.href='details.html';">
-        <p class="chi">展覽資料</p><p class="eng">Exhibition details</p>
+      <div class="menu-item" id="menu-id2" onclick="window.location.href='golden_prize.html';" onmouseover="$(this).css('background-color','#eee')" onmouseout="$(this).css('background-color','transparent')">
+        <p class="chi">金獎</p><p class="eng">Golden Prize</p>
       </div>
-      <div class="menu-item-red height-63" id="menu-id3" onclick="window.location.href='work.html';">
-        <p class="chi">學生作品及研究工作簿</p><p class="eng">Students’ artwork and research workbook</p>
+      <div class="menu-item" id="menu-id3" onclick="window.location.href='silver_prize.html';" onmouseover="$(this).css('background-color','#eee')" onmouseout="$(this).css('background-color','transparent')">
+        <p class="chi">銀獎</p><p class="eng">Silver Prize</p>
       </div>
-      <div class="menu-item-green height-50" id="menu-id4" onclick="window.location.href='video.html';">
-        <p class="chi">學生錄影訪問</p><p class="eng">Students’ video interview</p>
+      <div class="menu-item" id="menu-id4" onclick="window.location.href='certificate.html';" onmouseover="$(this).css('background-color','#eee')" onmouseout="$(this).css('background-color','transparent')">
+        <p class="chi">嘉許狀</p><p class="eng">Certificate of Merit</p>
       </div>
-      <div class="menu-item-red height-63" id="menu-id5" onclick="window.location.href='list.html';">
-        <p class="chi">參與學校及學生</p><p class="eng">Participating <br/>schools and students</p>
-      </div>
-      <div class="menu-item-green height-50" id="menu-id6" onclick="window.location.href='sidelights.html';">
-        <p class="chi">展覽花絮</p><p class="eng">Exhibition sidelights</p>
-      </div>
-      <div class="menu-item-red height-50" id="menu-id7" onclick="window.location.href='session.html';">
-        <p class="chi">學生分享會</p><p class="eng">Students' sharing session</p>
+      <div class="menu-item menu-item-active" id="menu-id5" onclick="window.location.href='memories.html';">
+        <p class="chi">珍貴時刻</p><p class="eng">Memories</p>
       </div>
     </div>
-
     <div class="contents">
       <div class="sidelights">
         <div>
-          <h2 class="chi">展覽花絮</h2>
+          <h2 class="chi">珍貴時刻</h2>
         </div>
         <div>
-          <h2 class="eng">Exhibition sidelights</h2>
+          <h2 class="eng">Memories</h2>
         </div>
         <div style="clear:both"></div>
+
+      <div class="jspContainer" style="width:800px;height:490px"><div id="jscrollpane-div">
         <ul>
-          <li><a href="img/sidelights/陳卓瑩.jpg" data-lightbox="sidelights"><img src="img/sidelights/陳卓瑩 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/余美儀.jpg" data-lightbox="sidelights"><img src="img/sidelights/余美儀 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8758.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8758 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8756.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8756 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8754.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8754 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8753.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8753 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8752.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8752 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8750.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8750 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8748.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8748 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8746.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8746 (2).jpg"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_0188.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_0188 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_0189.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_0189 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_0286.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_0286 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_0321.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_0321 (2).JPG"></img></a></li>
+          <li><a href="Img/Memories/IMG_0382.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_0382 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_0411.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_0411 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8739.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8739 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8755.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8755 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8783.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8783 (2).JPG"></img></a></li>
+          <li><a href="Img/Memories/IMG_8802.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8802 (2).JPG"></img></a></li>
 
-          <li><a href="img/sidelights/IMAG8745.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8745 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8744.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8744 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8743.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8743 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8742.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8742 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8741.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8741 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8740.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8740 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8739.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8739 (2).jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8738.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8738_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8735.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8735_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8724.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8724_1.jpg"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8890.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8890 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8908.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8908 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8932.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8932 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8957.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8957 (2).JPG"></img></a></li>
+          <li><a href="Img/Memories/IMG_8966.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8966 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8977.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8977 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8981.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8981 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_8987.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_8987 (2).JPG"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_9589.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_9589 (2).JPG"></img></a></li>
+          <li><a href="Img/Memories/IMG_9608.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_9608 (2).JPG"></img></a></li>
 
-          <li><a href="img/sidelights/IMAG8717.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8717_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8714.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8714_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8712.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8712_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8710.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8710_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8709.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8709_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8706.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8706_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8704.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8704_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8701.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8701_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8439.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8439_1.jpg"></img></a></li>
-          <li><a href="img/sidelights/IMAG8437.jpg" data-lightbox="sidelights"><img src="img/sidelights/IMAG8437_1.jpg"></img></a></li>
-
-          <li><a href="img/sidelights/20150310_162250.jpg" data-lightbox="sidelights"><img src="img/sidelights/20150310_162250_1.jpg"></img></a></li>
+          <li class="margin-right-20"><a href="Img/Memories/IMG_9609.JPG" data-lightbox="sidelights"><img src="Img/Memories/IMG_9609 (2).JPG"></img></a></li>
         </ul>
+      </div></div>
+
       </div>
     </div>
 
@@ -100,5 +80,13 @@
       <p class="footer-chi">2015 &copy; 本網頁版權屬香港特別行政區教育局所有。</p>
     </div>
   </div>
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all" />
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script>
+$(document).ready(function (){
+  $('.jspContainer').jScrollPane();
+});
+</script>
 </body>
 </html>
