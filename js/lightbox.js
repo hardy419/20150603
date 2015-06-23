@@ -155,7 +155,9 @@
           name: $link.attr('name') || null,
           media: $link.attr('media') || null,
           name_e: $link.attr('name-e') || '',
-          media_e: $link.attr('media-e') || ''
+          media_e: $link.attr('media-e') || '',
+          min_w: parseInt($link.attr('min-w'),10) || null,
+          min_h: parseInt($link.attr('min-h'),10) || null
         });
       }
 
@@ -246,6 +248,21 @@
               $image.height(imageHeight);
             }
           }
+
+          // Hardy 2015-6-23
+          self.album[imageNumber].min_w = 260;
+          if (null !== self.album[imageNumber].min_w && imageWidth < self.album[imageNumber].min_w) {
+            imageHeight = parseInt(imageHeight * (self.album[imageNumber].min_w / imageWidth), 10);
+            imageWidth = self.album[imageNumber].min_w;
+            $image.width(imageWidth);
+            $image.height(imageHeight);
+          }
+          else if(null !== self.album[imageNumber].min_h && imageHeight < self.album[imageNumber].min_h) {
+            imageWidth = parseInt(imageWidth * (self.album[imageNumber].min_h / imageHeight), 10);
+            imageHeight = self.album[imageNumber].min_h;
+            $image.width(imageWidth);
+            $image.height(imageHeight);
+          }
         }
         self.sizeContainer($image.width(), $image.height());
       };
@@ -286,7 +303,7 @@
           width: newWidth,
           //Hardy 2015-5-28
           //height: newHeight
-          height: newHeight+50
+          height: newHeight+65
         }, this.options.resizeDuration, 'swing', function() {
           postResize();
         });
