@@ -9,6 +9,8 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/lightbox.js"></script>
+<link media="screen" type="text/css" rel="stylesheet" href="js/video-js/video-js.css"></link>
+<script src="js/video-js/video.js"></script>
 </head>
 <body>
   <div class="background-div"><img src="Img/background.png" /></div>
@@ -21,7 +23,7 @@
         <p class="chi">展覽簡介</p><p class="eng">Introducion</p>
       </div>
       <div class="menu-item" id="menu-id2" onclick="window.location.href='golden_prize.html';" onmouseover="$(this).css('background-color','#eee')" onmouseout="$(this).css('background-color','transparent')">
-        <p class="chi">金獎</p><p class="eng">Golden Prize</p>
+        <p class="chi">金獎</p><p class="eng">Gold Prize</p>
       </div>
       <div class="menu-item menu-item-active" id="menu-id3" onclick="window.location.href='silver_prize.html';">
         <p class="chi">銀獎</p><p class="eng">Silver Prize</p>
@@ -57,13 +59,13 @@
               <td><p class="chi">李慧芳、黃穎智</p><p class="eng">LEE Wai-fong,  WONG Wing-chi
 </p><p class="chi">&nbsp;</p></td>
             </tr>
-          </table>
+          <tr><td><p class="chi">類別</p><p class="eng">Category</p><p class="chi">&nbsp;</p></td><td><p class="chi">媒體藝術</p><p class="eng">Media Art</p><p class="chi">&nbsp;</p></td></tr></table>
         </div>
         <div class="right-div">
           <h4 class="chi">作品</h4>
           <h4 class="eng">Artwork</h4>
           <ul class="student-work-u">
-            <li lsrc="Img/Artwork_2.silver/s136.png"><a href="Img/Artwork_2.silver/s136.png" data-lightbox="student-work" idx="1" student="盧漢泉" work="普教中下的白老鼠學生" student-e="LO Hon-chuen Jonathan" work-e="The Lab rats under the Scheme of using Putonghua to teach "><div class="img-frame"><div></div></div></a></li>
+            <li lsrc="Img/Artwork_2.silver/s136.png"><a href="javascript:js_op('videos/S136.mp4',720,540)"><div class="img-frame"><div></div></div></a></li>
           </ul>
         </div>
         <div style="clear:both"></div>
@@ -101,6 +103,45 @@ $(document).ready(function (){
     };
   });
 });
+</script>
+
+<div id="TB_window" style="position:absolute; top:50%; left:50%; width: 720px;height: 540px; margin-left:-360px;margin-top:-270px; display: none;z-index:2147483647">
+  <video id="popup-video" class="video-js vjs-default-skin" controls preload="auto">
+    <source src="" type='video/mp4' />
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+</div>
+<div id="TB_mask" style="filter:alpha(opacity=30);-moz-opacity:0.5;opacity:0.5;background-color:#000000;position:absolute;left:0px;top:0px;width:100%;height:300%;z-index:2147483646;display:none" onclick="js_op_close(false)"></div>
+
+<script>
+function js_op_close(reload){
+	var player=videojs('popup-video');
+	player.pause();
+	$("#TB_mask").css("display",'none');
+	$("#TB_window").css("display",'none');
+	$("#TB_window2").css("display",'none');
+	if(reload){
+		location.reload();
+	}
+}
+function js_op(url,w,h){
+	$("#TB_mask").css("display",'block');
+	var player=videojs('popup-video');
+	player.src({ type: "video/mp4", src: url });
+  videojs("popup-video", {}, function(){
+	// Player (this) is initialized and ready.
+    $("#TB_window").css("width",w+"px");
+    $("#TB_window").css("height",h+"px");
+    $("#TB_window").css("margin-left",(-w/2)+"px");
+    $("#TB_window").css("margin-top",(-h/2)+"px");
+    $(".video-js").css("width",w+"px");
+    $(".video-js").css("height",h+"px");
+	$(".vjs-big-play-button").css("margin","auto");
+	$(".vjs-big-play-button").css("top",((h-84)/2)+"px");
+	$(".vjs-big-play-button").css("position","relative");
+  });
+	$("#TB_window").css("display",'block');
+}
 </script>
 </body>
 </html>
